@@ -25,6 +25,7 @@
     "rails-erb-loader": "^5.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
     "react_ujs": "^2.2.1",
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
@@ -34,6 +35,6 @@
     "webpack-merge": "^4.1.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.7.0"
+    "webpack-dev-server": "^2.7.1"
   }
 }
