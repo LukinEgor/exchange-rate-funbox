@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-export default class ExchangeRatePanel extends React.Component {
+export default class RatePanel extends React.Component {
   render() {
     return <div>
-      ExchangeRatePanel
+      <Link to='/admin'>Admin</Link>
+      {this.props.data.rate}
+      RatePanel
     </div>
   }
 }
