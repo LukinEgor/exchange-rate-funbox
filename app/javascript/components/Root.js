@@ -5,7 +5,7 @@ import App from './App.js';
 export default class Root extends React.Component {
   render() {
     return <BrowserRouter>
-      <App rate={this.props.rate} />
+      <App rate={this.props.rate.value} />
     </BrowserRouter>
   }
 }

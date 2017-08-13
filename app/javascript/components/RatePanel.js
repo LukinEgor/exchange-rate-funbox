@@ -5,7 +5,7 @@ export default class RatePanel extends React.Component {
   render() {
     return <div>
       <Link to='/admin'>Admin</Link>
-      {this.props.data.rate}
+      {this.props.rate}
       RatePanel
     </div>
   }
