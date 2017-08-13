@@ -1,5 +1,6 @@
 class ExchangeRateController < ApplicationController
   def index
-    @rate = 6.4
+    origin = 'USD'
+    @rate = Rate.find_by(origin: origin)
   end
 end

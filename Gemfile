@@ -54,3 +54,7 @@ gem 'foreman'
 gem 'addressable'
 
 gem "react-rails"
+
+gem 'redis'
+
+gem 'rufus-scheduler'

@@ -1,7 +1,11 @@
 version: '3'
 services:
+  redis:
+    image: redis
+
   db:
     image: postgres
+
   web:
     build: .
     command: bash -c "foreman start"
@@ -12,3 +16,4 @@ services:
       - "8080:8080"
     depends_on:
       - db
+      - redis
