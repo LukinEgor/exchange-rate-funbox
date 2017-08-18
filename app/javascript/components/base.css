@@ -1,0 +1,20 @@
+body {
+  background: #f3f3f3;
+}
+
+.rate-table {
+  margin: auto;
+  width: 300px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.content {
+  margin: auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.menu {
+  margin-bottom: 30px;
+}
