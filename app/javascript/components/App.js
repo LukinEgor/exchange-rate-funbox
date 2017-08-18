@@ -84,20 +84,25 @@ export default class App extends React.Component {
 
   render() {
     return <div>
-      <h1>{this.state.isActiveUserRate ?
-        this.state.userRate : this.state.originRate}</h1>
-      <Switch>
-        <Route exact path='/' render={() => (
-          <RatePanel state={this.state} />
-        )}/>
-        <Route exact path='/admin' render={() => (
-          <AdminPanel
-            originRate={this.state.originRate}
-            userRate={this.state.userRate}
-            isActiveUserRate={this.state.isActiveUserRate}
-            update={this.update.bind(this)} />
-        )}/>
-      </Switch>
+      <div className="rate-table">
+        <h1>1$ : {this.state.isActiveUserRate ?
+            this.state.userRate : this.state.originRate}&#8381;</h1>
+      </div>
+      <div className="content">
+        <Switch>
+          <Route exact path='/' render={() => (
+            <RatePanel state={this.state} />
+          )}/>
+          <Route exact path='/admin' render={() => (
+            <AdminPanel
+              originRate={this.state.originRate}
+              userRate={this.state.userRate}
+              isActiveUserRate={this.state.isActiveUserRate}
+              lastDate={this.state.dateActiveUserRate}
+              update={this.update.bind(this)} />
+          )}/>
+        </Switch>
+      </div>
     </div>
   }
 }
